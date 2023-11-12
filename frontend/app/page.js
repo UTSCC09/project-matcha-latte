@@ -26,11 +26,13 @@ import  React, { useState, useEffect } from 'react';
 import styles from './page.module.css'
 import { AddMessageForm } from './components/AddMessageForm/AddMessagesForm';
 import { Messages } from './components/Messages/Messages';
+import { QRcomp } from './components/QRcode/qr';
 
 export default function Home() {
 
   //const [messages, setMessages] = useState([]);
-  //const [message, setMessage] = userState([]);
+  //const [message, setMessage] = useState([]);
+  const [username, setUsername] = useState("");
 
     
     // useEffect(() => {
@@ -38,7 +40,17 @@ export default function Home() {
     // }, [])
 
     return (
-        <AddMessageForm/>
+      <div>
+        <AddMessageForm/>,
+        <QRcomp username={username}/>
+        <input
+        value={username}
+        onChange={(e) => {
+          setUsername(e.target.value)
+        }}
+        />
+    
+      </div>
         // <Messages/>
     );
 }
