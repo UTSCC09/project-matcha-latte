@@ -1,9 +1,9 @@
 import mongoose from "mongoose";
 
-const budgetSchema = new mongoose.Schema({
-  category: { type: String, required: true },
-  amount: { type: Number, required: true },
-  createdAt: { type: Date, default: Date.now },
+const notificationSchema = new mongoose.Schema({
+  content: { type: String, required: true },
+  category: { type: String },
+  date: { type: Date, default: Date.now },
   userRef: {
     type: mongoose.Schema.Types.ObjectId,
     required: true,
@@ -16,7 +16,7 @@ const budgetSchema = new mongoose.Schema({
   }
 });
 
-budgetSchema.virtual("user", {
+notificationSchema.virtual("user", {
   ref: function (doc) {
     return doc.userType;
   },
@@ -25,7 +25,6 @@ budgetSchema.virtual("user", {
   justOne: true
 });
 
-const Budget = mongoose.model("BudgetColl", budgetSchema);
+const Notification = mongoose.model("NotificationColl", notificationSchema);
 
-export default Budget;
-
+export default Notification;

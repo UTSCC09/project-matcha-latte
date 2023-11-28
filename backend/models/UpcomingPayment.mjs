@@ -1,9 +1,11 @@
 import mongoose from "mongoose";
 
-const budgetSchema = new mongoose.Schema({
-  category: { type: String, required: true },
+const UpcomingPaymentSchema = new mongoose.Schema({
+  frequency: { type: String, required: true },
+  category: { type: String },
   amount: { type: Number, required: true },
-  createdAt: { type: Date, default: Date.now },
+  start_date: { type: Date, default: Date.now },
+  end_date: { type: Date, required: true },
   userRef: {
     type: mongoose.Schema.Types.ObjectId,
     required: true,
@@ -16,7 +18,7 @@ const budgetSchema = new mongoose.Schema({
   }
 });
 
-budgetSchema.virtual("user", {
+UpcomingPaymentSchema.virtual("user", {
   ref: function (doc) {
     return doc.userType;
   },
@@ -25,7 +27,6 @@ budgetSchema.virtual("user", {
   justOne: true
 });
 
-const Budget = mongoose.model("BudgetColl", budgetSchema);
+const UpcomingPayment = mongoose.model("UpcomingPaymentColl", UpcomingPaymentSchema);
 
-export default Budget;
-
+export default UpcomingPayment;
