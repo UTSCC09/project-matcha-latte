@@ -1,0 +1,185 @@
+.logo {
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #645075;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 550;
+  }
+  
+  .login {
+    width: 30%;
+    height: 55vh;
+    border-radius: 15px;
+    background: rgba(227, 229, 255, 0.5);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .pic {
+    padding-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .logoPic {
+    height: 60px;
+    width: 60px;
+  }
+  
+  .input {
+    padding-top: 20px;
+  }
+  
+  .next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 116px;
+    height: 29px;
+    border-radius: 15px;
+    background: rgba(250, 221, 209, 0.5);
+    border: none;
+    outline: none;
+    color: rgba(255, 148, 104, 0.6);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: transform 0.3s;
+  }
+  
+  .click {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .next{
+    margin-top: auto;
+  }
+
+  .next:hover {
+    background-color: rgba(255, 148, 104, 0.6);
+    color: rgba(250, 221, 209, 0.5);
+    transform: scale(1.1);
+  }
+  
+  .uploadpic {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .addpic {
+    color: #645075;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 550;
+    padding-top: 10px;
+  }
+  
+  .email,
+  .username,
+  .password {
+    width: 100%;
+    height: 45px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+    border: none;
+    color: #645075;
+  }
+  
+  .email::placeholder,
+  .username::placeholder,
+  .password::placeholder {
+    text-align: center;
+    color: #998ca3;
+    font-weight: 300;
+    font-style: italic;
+    font-size: smaller;
+  }
+  
+  .email,
+  .username,
+  .password,
+  .email:focus,
+  .username:focus,
+  .password:focus {
+    text-align: center;
+    color: #998ca3;
+    font-weight: 500;
+    font-style: italic;
+    font-size: small;
+  }
+  
+  .content {
+    color: #645075;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 550;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+
+  .four {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px; /* Adjust the gap as needed */
+  }
+
+  
+  .expenses {
+    color: #645075;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 550;
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .dash {
+    color: #645075;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 550;
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .budgets {
+    color: #645075;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 550;
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .chat {
+    color: #645075;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 550;
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 10px;
+  }
+  
